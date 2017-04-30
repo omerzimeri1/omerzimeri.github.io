@@ -8,6 +8,9 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 <html>
 <head>
 	<title>Omer Zimeri</title>
+	<!-- icons -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<!-- //icons -->
 	<!--fonts-->
 		<link href='http://fonts.googleapis.com/css?family=Raleway:400,100,200,300,500,600,700,800,900' rel='stylesheet' type='text/css'>
 		<link href='http://fonts.googleapis.com/css?family=Lato:100,300,400,700,900,100italic,300italic,400italic,700italic,900italic' rel='stylesheet' type='text/css'>
@@ -113,7 +116,9 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 			</div>
 			<div class="clearfix"></div>
 		</div>
+		
 	</div>
+	<a class="scroll" href="#about"> <i id="arrows" class="fa fa-angle-down fa-5x" area-hidden="true"></i> </a>
 </div>
 <!--/header-banner-->
 <!--about-->
@@ -356,32 +361,16 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 <!--contact-->
 <div class="contact" id="contact">
 	<div class="container">
-		<div class="contact-info text-center">
+		<div class="contact-info text-center" style="border-bottom:20px">
 			<h3>CONTACT</h3>
 			<div class="strip text-center"><img src="images/con1.png" alt=" "/></div>
 		</div>
-		<div class="contact-grids">
-			<div class="col-md-5 contact-left">
+		<div class="contact-grids" style="margin: 0 auto; width: 50%;">
+			<div class="contact-left" style="text-align: center;">
 				<h3>Say Hi to Me</h3>
-				<div class="stripb"></div>
 				<ul>
-					<li>Orchard Park, Long Bennington, </li>
-					<li>Newark, Lincolnshire </li>
-					<li>NG23 5DQ, United Kingdom</li>
-					<li>9876543210</li>
-					<li><a href="mailto:info@example.com">Sebastian@mail.com</a></li>
-					<li><a href="#">www.sebasti.an</a></li>
+					<li><a href="mailto:omer-zimeri@live.at">omer-zimeri@live.at</a></li>
 				</ul>
-			</div>
-			<div class="col-md-7 contact-right">
-				<h3>Drop Me A Line</h3>
-				<div class="stripb"></div>
-				<form>
-					<input type="text" value="Name" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Name';}" required="">
-					<input type="text" value="E-mail" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'E-mail';}" required="">
-					<textarea type="text" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Message';}" required="">Message</textarea>
-					<input type="submit" value="SEND">
-				</form>
 			</div>
 			<div class="clearfix"></div>
 		</div>
@@ -412,7 +401,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 				};
 			*/
 								
-			$().UItoTop({ easingType: 'easeOutQuart' });
+			$().UItoTop({ easingType: 'easeOutBack' });
 								
 			});
 	</script>
