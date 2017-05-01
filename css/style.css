@@ -170,7 +170,7 @@ float:right;
 	animation: bounce 900ms infinite alternate;
     -webkit-animation: bounce 900ms infinite alternate;
 }
-/*-- //bouncing arrow --*/
+
 
 @keyframes bounce {
   from {
@@ -187,6 +187,47 @@ float:right;
   to {
     transform: translateY(-15px);
   }
+}
+
+@-moz-keyframes bounce {
+  from {
+    transform: translateY(0px);
+  }
+  to {
+    transform: translateY(-15px);
+  }
+}
+
+@-o-keyframes rotate bounce {
+  from {
+    transform: translateY(0px);
+  }
+  to {
+    transform: translateY(-15px);
+  }
+}
+/*-- //bouncing arrow --*/
+
+
+
+@-moz-keyframes {
+	0% {transform: rotate(0deg);}
+	100% {transform: rotate(-360deg);}
+}
+
+@-webkit-keyframes rotate {
+	0% {transform: rotate(0deg);}
+	100% {transform: rotate(-360deg);}
+}
+
+@-o-keyframes rotate {
+	0% {transform: rotate(0deg);}
+	100% {transform: rotate(-360deg);}
+}
+
+@keyframes rotate {
+	0% {transform: rotate(0deg);}
+	100% {transform: rotate(-360deg);}
 }
 
 /*--about--*/
@@ -2611,14 +2652,6 @@ border:none;
 	.contact {
 	  padding: 40px 0 0 0;
 	}
-	.contact-left {
-	  float: left;
-	  width: 34% !important;
-	}
-	.contact-right {
-	  float: right;
-	  width: 66% !important;
-	}
 	.contact-left ul li {
 	  font-size: 14px;
 	}
@@ -2666,14 +2699,6 @@ border:none;
 	}
 }
 @media(max-width:640px){
-.contact-left {
-  float: left;
-  width: 39% !important;
-}
-.contact-right {
-  float: right;
-  width: 61% !important;
-}
 	.menu_box_list ul li {
 	  display: block;
 	  padding: 10px 0;
@@ -3210,14 +3235,6 @@ border:none;
 	.col-md-7.contact-right {
 	  padding-right: 0;
 	}
-	.contact-left {
-	  float: left;
-	  width: 46% !important;
-	}
-	.contact-right {
-	  float: right;
-	  width: 54% !important;
-	}
 	.contact-right form input[type="submit"] {
 	  width: 55%;
 	  background: url(../images/mess.png) no-repeat 14px 11px;
@@ -3452,15 +3469,6 @@ a.callbacks_nav.callbacks1_nav.prev {
 }
 .contact-grids {
   margin-top: 25px;
-}
-.contact-left {
-  float: left;
-  width: 100% !important;
-}
-.contact-right {
-  float: right;
-  width: 100% !important;
-  padding: 0;
 }
 .footer-top {
   min-height: 36px;
